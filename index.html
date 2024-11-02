@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nafis Tarik</title>
+    <!-- Bootstrap CSS for responsive design and pre-designed components -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome for a collection of icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Favicon for this website -->
+    <link rel="icon" href="./Assets/favicon.png" type="image/x-icon" />
+    <!-- Swiper CSS for styling Swiper sliders -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap Icons for additional icon set -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Custom CSS for your own styles -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </head>
+
+  <body>
+    <!-- particles.js configuration -->
+
+    <div id="particles-js"></div>
+
+    <!-- particles.js configuration ends -->
+
+    <!-- header section starts-->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand me-auto" href="#home">
+          <img src="./Assets/logo.png" alt="logo" />
+        </a>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Nafis Tarik
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active mx-lg-2"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#testimonials">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a
+          ><button id="mode-button" class="mode-button">
+            <i class="fas fa-cloud-sun"></i></button
+        ></a>
+        <button
+          class="navbar-toggler pe-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- header section ends-->
+
+    <!-- home section starts-->
+
+    <section id="home" class="home">
+      <div class="container d-flex min-vh-100">
+        <div class="row align-items-center justify-content-center w-100">
+          <div class="col-md-6 text-center home-content text-md-start my-5">
+            <h1>Hello, I'm <span class="nafis">Nafis!</span></h1>
+            <p class="intro-text mb-4 ms-1">
+              I'm a <span class="developer">Frontend Developer</span> with a
+              passion for creating user-friendly applications.
+            </p>
+            <a href="#contact" class="button me-2 ms-1">Contact me</a>
+            <a
+              href="#"
+              onclick="window.open('./assets/CV_Nafis_RUET.pdf')"
+              class="button"
+              >Download CV</a
+            >
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="./Assets/hero.png" alt="Hero Image" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home section ends-->
+
+    <!-- about section starts -->
+
+    <section id="about" class="about">
+      <div class="container d-flex min-vh-100">
+        <div
+          class="row align-items-center justify-content-center w-100 about-items"
+        >
+          <h2 class="text-center title">About Me</h2>
+          <div
+            class="about-content col-md-6 text-center text-md-start mt-4 mb-5"
+          >
+            <p class="intro-text mb-4 ms-1">
+              My name is Md. Nafis Tarik. I have been practicing web development
+              for over one and a half years, focusing primarily on frontend
+              technologies. I have a strong foundation in HTML, CSS, JavaScript,
+              and React JS, and I'm always looking to expand my skill set. I'm
+              currently available for frontend jobs or freelance work.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/nafistarik"
+              class="social-icon me-2 ms-1"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/nafistarik"
+              class="social-icon me-2 ms-1"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/mdnafees.tarique"
+              class="social-icon me-2 ms-1"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="col-md-6 text-center about-image">
+            <img src="./Assets/nafis.png" alt="Hero Image" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <a href="#home" class="up-icon"
+        ><i class="fas fa-chevron-circle-up"></i
+      ></a>
+    </section>
+
+    <!-- about section starts -->
+
+    <!-- projects section ends-->
+
+    <section id="projects" class="projects min-vh-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="text-center title w-100">Projects</h2>
+
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
+              <img
+                src="./Assets/project1.png"
+                class="img-fluid project-image"
+                alt="Project 1 Image"
+              />
+              <h4 class="project-title">E-commerce Frontend</h4>
+              <div class="tech-icons">
+                <i class="fab fa-react"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/nafistarik/Ecommerce-Frontend"
+                  class="btn"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://dressifyshop.netlify.app"
+                  class="btn"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
+              <img
+                src="./Assets/project2.png"
+                class="img-fluid project-image"
+                alt="Project 2 Image"
+              />
+              <h4 class="project-title">Education Website</h4>
+              <div class="tech-icons">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/nafistarik/Dataminds-Academy-by-HTML-CSS"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://dataminds.netlify.app/"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
+              <img
+                src="./Assets/project3.png"
+                class="img-fluid project-image"
+                alt="Project 3 Image"
+              />
+              <h4 class="project-title">Blackjack Game</h4>
+              <div class="tech-icons">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/nafistarik/JavaScript-BlackJack-Game"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://blackjackkgamee.netlify.app"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
+              <img
+                src="./Assets/project4.png"
+                class="img-fluid project-image"
+                alt="Project 4 Image"
+              />
+              <h4 class="project-title">Travel Planning</h4>
+              <div class="tech-icons">
+                <i class="fab fa-react"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/nafistarik/dynamic-vacation-planning"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://holidayyhorizon.netlify.app/"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
+              <img
+                src="./Assets/project5.png"
+                class="img-fluid project-image"
+                alt="Project 5 Image"
+              />
+              <h4 class="project-title">Tenzies Game</h4>
+              <div class="tech-icons">
+                <i class="fab fa-react"></i>
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/nafistarik/react-tenzies-game"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://tenziies.netlify.app"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
+              <img
+                src="./Assets/project6.png"
+                class="img-fluid project-image"
+                alt="Project 6 Image"
+              />
+              <h4 class="project-title">Meme Generator</h4>
+              <div class="tech-icons">
+                <i class="fab fa-react"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/nafistarik/react-meme-generator"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://reactmemegeneratorrr.netlify.app"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
+              <img
+                src="./Assets/project7.png"
+                class="img-fluid project-image"
+                alt="Project 7 Image"
+              />
+              <h4 class="project-title">Task Management App</h4>
+
+              <div class="tech-icons">
+                <i class="fab fa-react"></i>
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/nafistarik/tasker-app"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://taskerrreact.netlify.app/"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
+              <img
+                src="./Assets/project8.png"
+                class="img-fluid project-image"
+                alt="Project 8 Image"
+              />
+              <h4 class="project-title">Quiz App</h4>
+              <div class="tech-icons">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/nafistarik/Quiz-App-JS"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://quizscriptt.netlify.app/"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="project-card">
+              <img
+                src="./Assets/project9.png"
+                class="img-fluid project-image"
+                alt="Project 9 Image"
+              />
+              <h4 class="project-title">Tic Tac Toe</h4>
+              <div class="tech-icons">
+                <i class="fab fa-react"></i>
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/nafistarik/tic-tac-toe"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://tic-tac-toe-react-tailwind.vercel.app/"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects section ends-->
+
+    <!-- skills section starts -->
+
+    <section id="skills" class="skills min-vh-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="text-center title w-100">Skills</h2>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fab fa-html5 skill-icon"></i>
+              <h4 class="skill-title">HTML</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fab fa-css3-alt skill-icon"></i>
+              <h4 class="skill-title">CSS</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 85%"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fab fa-bootstrap skill-icon"></i>
+              <h4 class="skill-title">Bootstrap</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 65%"
+                  aria-valuenow="65"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fab fa-css3-alt skill-icon"></i>
+              <h4 class="skill-title">Tailwind</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fab fa-js skill-icon"></i>
+              <h4 class="skill-title">JavaScript</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fas fa-code skill-icon"></i>
+              <h4 class="skill-title">C</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 65%"
+                  aria-valuenow="65"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fab fa-git-alt skill-icon"></i>
+              <h4 class="skill-title">Git</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 60%"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fab fa-github skill-icon"></i>
+              <h4 class="skill-title">GitHub</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 60%"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fab fa-react skill-icon"></i>
+              <h4 class="skill-title">React JS</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 65%"
+                  aria-valuenow="65"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="skill-card">
+              <i class="fab fa-node-js skill-icon"></i>
+              <h4 class="skill-title">Node.js</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 35%"
+                  aria-valuenow="35"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section ends -->
+
+    <!-- Testimonials Section starts-->
+
+    <section id="testimonials" class="testimonials section min-vh-100">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Reviews</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 3,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 20
+                },
+                "768": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 30
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 30
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <!-- Testimonial 5 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, error quidem asperiores rerum iusto recusandae saepe
+                  animi voluptatibus suscipit.
+                </p>
+                <div class="profile mt-auto">
+                  <img
+                    src="assets/reviewer5.jpg"
+                    class="testimonial-img"
+                    alt="Reviewer picture"
+                  />
+                  <h3>Md. Abu Zor Gefary</h3>
+                  <h4>Software Development Team Lead</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, error quidem asperiores rerum iusto recusandae saepe
+                  animi voluptatibus suscipit.
+                </p>
+                <div class="profile mt-auto">
+                  <img
+                    src="assets/reviewer1.jpg"
+                    class="testimonial-img"
+                    alt="Reviewer picture"
+                  />
+                  <h3>Ahnaf Arnob</h3>
+                  <h4>Data Scientist</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, error quidem asperiores rerum iusto recusandae saepe
+                  animi voluptatibus suscipit.
+                </p>
+                <div class="profile mt-auto">
+                  <img
+                    src="assets/reviewer2.jpg"
+                    class="testimonial-img"
+                    alt="Reviewer picture"
+                  />
+                  <h3>Pranta Das</h3>
+                  <h4>React Developer</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, error quidem asperiores rerum iusto recusandae saepe
+                  animi voluptatibus suscipit.
+                </p>
+                <div class="profile mt-auto">
+                  <img
+                    src="assets/reviewer3.jpg"
+                    class="testimonial-img"
+                    alt="Reviewer picture"
+                  />
+                  <h3>Rizwan Fahim</h3>
+                  <h4>Angular Developer</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, error quidem asperiores rerum iusto recusandae saepe
+                  animi voluptatibus suscipit.
+                </p>
+                <div class="profile mt-auto">
+                  <img
+                    src="assets/reviewer4.jpg"
+                    class="testimonial-img"
+                    alt="Reviewer picture"
+                  />
+                  <h3>Hassan Shuvo</h3>
+                  <h4>Php Developer</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+            <!-- Testimonial 6 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, error quidem asperiores rerum iusto recusandae saepe
+                  animi voluptatibus suscipit.
+                </p>
+                <div class="profile mt-auto">
+                  <img
+                    src="assets/reviewer6.jpg"
+                    class="testimonial-img"
+                    alt="Reviewer picture"
+                  />
+                  <h3>Anindya Basak</h3>
+                  <h4>Machine Learning Engineer</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Testimonials Section -->
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8 col-sm-12">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form id="contactForm">
+              <div class="form-group mb-3">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Enter the subject"
+                  required
+                />
+              </div>
+
+              <div class="form-group mb-4">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Type your message here"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button
+                  onclick="sendMail(event)"
+                  type="submit"
+                  class="btn btn-primary"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+
+    <footer class="footer">
+      <div class="container text-center">
+        <p class="footer-text">
+          Made with ❤️ by Nafis Tarik, all rights reserved 2024
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/mdnafees.tarique"
+            class="social-icon"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://github.com/nafistarik"
+            class="social-icon"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/nafistarik"
+            class="social-icon"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <!-- mouse cursor scrolling effects content starts-->
+
+    <div class="cursor">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <!-- mouse cursor scrolling effects content ends -->
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- Initialize EmailJS -->
+    <script type="text/javascript">
+      (function () {
+        console.log("Initialize EmailJS");
+        emailjs.init("_5A547h_STqj2aoyy"); // Replace YOUR_PUBLIC_KEY with your actual public key
+        console.log("EmailJS initialized");
+      })();
+
+      // Email validation function
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      function validateForm(formMessage) {
+        // Check if all fields are filled
+        for (let key in formMessage) {
+          if (formMessage[key] === "") {
+            return false; // Return false if any field is empty
+          }
+        }
+
+        // Validate email format
+        if (!isValidEmail(formMessage.email)) {
+          alert("Please enter a valid email address.");
+          return false; // Return false if the email is not valid
+        }
+
+        return true; // Return true if all fields are filled and email is valid
+      }
+
+      function sendMail(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        let formMessage = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("message").value,
+        };
+
+        console.log("Form data:", formMessage);
+
+        if (validateForm(formMessage)) {
+          // Only send the email if the form is valid
+          emailjs.send("service_9x6am4f", "template_z7qrwcx", formMessage).then(
+            function (response) {
+              console.log("EmailJS response:", response);
+              alert("Message sent successfully!");
+              document.getElementById("contactForm").reset(); // Clear the form fields
+            },
+            function (error) {
+              console.error("EmailJS error:", error);
+              alert("Failed to send message. Please try again.");
+            }
+          );
+        } else {
+          // If the form is not valid, display an error message
+          alert("Please fill out all fields before submitting the form.");
+        }
+      }
+    </script>
+
+    <!-- custom js -->
+    <script src="app.js"></script>
+
+    <!-- Particle Script -->
+
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#827171",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#827171",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#827171",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
+</html>
